@@ -3,15 +3,20 @@ package cn.shan.study.controller;
 import java.util.HashMap;
 import java.util.Map;
 
+import javax.validation.Valid;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 import cn.shan.study.meta.User;
 
 @Controller
 @RequestMapping("/user")
-public class UserController {
+public class UserController { 
 	private final static Map<String,User>users=new HashMap<String,User>();
 
 	public UserController() {
@@ -26,6 +31,19 @@ public class UserController {
 		model.addAttribute("users",users);
 		return "user/list";		
 	}
-
+	
+	@RequestMapping(value="/add",method=RequestMethod.GET)
+	public String add(Model model){
+		model.addAttribute(new User());
+		return "user/add";
+	}
+	@RequestMapping(value="/add",method=RequestMethod.POST)
+	public String add(@Valid User user,BindingResult binding){
+		users.put(user.getUsername(),user);
+		if(binding.hasErrors()){
+			return "redirect:user/add";
+		}
+		return InternalResourceViewResolver.REDIRECT_URL_PREFIX+"/user/users";
+	}
 
 }

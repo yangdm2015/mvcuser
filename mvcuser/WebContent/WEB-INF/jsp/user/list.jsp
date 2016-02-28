@@ -8,6 +8,7 @@
 <title>用户列表</title>
 </head>
 <body>
+<a href="add">Add</a><br/>
  <c:forEach items="${users}" var = "user">
  	${ user.value.username}-------
  	${user.value.nickname }-------
