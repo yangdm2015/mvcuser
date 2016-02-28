@@ -20,21 +20,12 @@ public class UserController {
 		users.put("gfc",new User("gfc","¹ù¸»³Ç","123","123123"));
 		users.put("lm",new User("lm","ÀèÃ÷","123","123123"));
 	}
-	@RequestMapping(value={"/users"})
+	@RequestMapping("/users") 
 	public String list(Model model){
-		System.out.println("list");
+		System.out.println("list"); 
 		model.addAttribute("users",users);
 		return "user/list";		
 	}
-	@RequestMapping("/")
-	public String hello(Model model){
-		System.out.println("hello");
-		return "user/list";		
-	}
-	@RequestMapping("/user")
-	public String hello1(Model model){
-		System.out.println("hello1");
-		return "user/list";		
-	}
+
 
 }
