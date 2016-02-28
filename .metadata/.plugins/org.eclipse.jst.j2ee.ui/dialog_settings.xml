@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="J2EE_IMPORT_null">
+		<item value="D:\java\struts-2.3.24.1\apps\struts2-blank.war"/>
+		<item value="D:\javaweb\HelloWorld.war"/>
+		<item value="D:\javaweb\Struts2InAction.war"/>
+		<item value="C:\Program Files\Apache Software Foundation\Tomcat7.06\webapps\Struts2InAction.war"/>
+	</list>
+	<list key="MRU_RUNTIME_STORE">
+		<item value="Apache Tomcat v7.0"/>
+		<item value="Apache Tomcat v6.0"/>
+	</list>
+</section>

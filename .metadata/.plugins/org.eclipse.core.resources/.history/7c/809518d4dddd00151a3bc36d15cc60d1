@@ -1,0 +1,11 @@
+package cn.shan.study.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping("/user")
+public class UserController {
+	private final static Map<String,User>users=new HashMap<String,User>()
+
+}

@@ -1,0 +1,13 @@
+computeSourcePath=true
+configMode=serverFile
+contextsDir=C\:\\Program Files\\Apache Software Foundation\\Tomcat7.06\\conf\\Catalina\\localhost
+eclipse.preferences.version=1
+enabledSecurityManager=true
+managerUrl=http\://localhost\:8080/manager
+projectsInCp=MyFirstDynanicWebProject;Servers;
+projectsInSourcePath=MyFirstDynanicWebProject;
+tomcatBase=C\:\\Program Files\\Apache Software Foundation\\Tomcat6.0
+tomcatConfigFile=C\:\\Program Files\\Apache Software Foundation\\Tomcat7.06\\conf\\server.xml
+tomcatDir=C\:\\Program Files\\Apache Software Foundation\\Tomcat7.06
+tomcatJRE=1447844789326
+tomcatVersion=tomcatV7

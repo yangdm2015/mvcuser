@@ -1,0 +1,8 @@
+127.0.0.1 - - [10/Dec/2015:09:30:14 +0800] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [10/Dec/2015:09:30:16 +0800] "GET /Struts2InAction/chapterTwo/NameCollector.jsp HTTP/1.1" 200 800
+0:0:0:0:0:0:0:1 - - [10/Dec/2015:09:30:21 +0800] "POST /Struts2InAction/chapterTwo/HelloWorld.action;jsessionid=A3A1E744B74E8E1E7AE13D176A44A0B6 HTTP/1.1" 200 559
+127.0.0.1 - - [10/Dec/2015:11:46:46 +0800] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [10/Dec/2015:11:46:47 +0800] "GET /Struts2InAction/ HTTP/1.1" 200 217
+0:0:0:0:0:0:0:1 - - [10/Dec/2015:11:46:47 +0800] "GET /Struts2InAction/Menu.action HTTP/1.1" 200 1758
+0:0:0:0:0:0:0:1 - - [10/Dec/2015:11:46:49 +0800] "GET /Struts2InAction/chapterTwo/Name.action HTTP/1.1" 200 756
+0:0:0:0:0:0:0:1 - - [10/Dec/2015:11:46:51 +0800] "POST /Struts2InAction/chapterTwo/HelloWorld.action HTTP/1.1" 200 560

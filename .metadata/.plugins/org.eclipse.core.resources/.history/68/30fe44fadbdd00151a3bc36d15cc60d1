@@ -1,0 +1,7 @@
+package cn.shan.study.controller;
+
+@Controller
+@RequestMapping("/user")
+public class UserController {
+
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<modules>
+  <module moduleId="org.eclipse.jst.j2ee.server:Struts2InAction" serverId="Tomcat v7.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:MyFirstDynanicWebProject" serverId="Tomcat v6.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:spring_mvc_01" serverId="Tomcat v7.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:yangshantest" serverId="Tomcat v7.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:spring_mvc_user" serverId="Tomcat v7.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:test" serverId="Tomcat v7.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:HelloNewWorld" serverId="Tomcat v7.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:ztreetest" serverId="Tomcat v7.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.j2ee.server:HelloWorld" serverId="Tomcat v7.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:Struts2_0100_Introduction" serverId="Tomcat v7.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:Flexigirdhello" serverId="Tomcat v7.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:Strutsstudy" serverId="Tomcat v7.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:springmvc001" serverId="Tomcat v7.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:struts2-blank" serverId="Tomcat v7.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.j2ee.server:struts2-blank" serverId="Tomcat v7.0 Server at localhost"/>
+</modules>

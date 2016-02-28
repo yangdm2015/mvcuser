@@ -1,0 +1,18 @@
+<classpath>
+  <container id="spring_mvc_01!org.eclipse.jst.j2ee.internal.web.container">
+    <entry id="D:/javaweb/spring_mvc_01/WebContent/WEB-INF/lib/spring-webmvc-4.2.3.RELEASE.jar">
+      <source-attachment-path>D:/java/lib/spring-framework-4.2.3.RELEASE-dist/srcs/spring-webmvc-4.2.3.RELEASE-sources.jar</source-attachment-path>
+    </entry>
+    <entry id="D:/javaweb/spring_mvc_01/WebContent/WEB-INF/lib/spring-web-4.2.3.RELEASE.jar">
+      <source-attachment-path>D:/java/lib/spring-framework-4.2.3.RELEASE-dist/libs/spring-web-4.2.3.RELEASE-sources.jar</source-attachment-path>
+    </entry>
+  </container>
+  <container id="yangshantest!org.eclipse.jst.j2ee.internal.web.container">
+    <entry id="D:/javaweb/yangshantest/WebContent/WEB-INF/lib/spring-web-4.2.3.RELEASE.jar">
+      <source-attachment-path>D:/java/lib/spring-framework-4.2.3.RELEASE-dist/srcs/spring-web-4.2.3.RELEASE-sources.jar</source-attachment-path>
+    </entry>
+    <entry id="D:/javaweb/yangshantest/WebContent/WEB-INF/lib/spring-webmvc-4.2.3.RELEASE.jar">
+      <source-attachment-path>D:/java/lib/spring-framework-4.2.3.RELEASE-dist/libs/spring-webmvc-4.2.3.RELEASE-sources.jar</source-attachment-path>
+    </entry>
+  </container>
+</classpath>

@@ -1,0 +1,18 @@
+package com.shan.study;
+
+import java.util.Map;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+
+@Controller
+public class HelloController {
+	@RequestMapping (value={"/","/hello"})
+	public String hello( int id,Map<String,Object> map){
+		System.out.println(id);
+		System.out.println("Hello");
+		map.put("message", "world");
+	return "hello";
+	}
+}

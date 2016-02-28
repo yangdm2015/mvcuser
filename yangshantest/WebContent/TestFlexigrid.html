@@ -1,0 +1,127 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Cache-control" content="no-cache, must-revalidate">
+<meta http-equiv="Cache" content="no-cache">
+<meta HTTP-EQUIV="expires" CONTENT="0">
+<title>Test Flexigrid</title>
+<link rel="stylesheet" type="text/css"
+	href="js/flexigrid/css/flexigrid/flexigrid.css">
+<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+<script type="text/javascript" src="js/flexigrid/flexigrid.js"></script>
+<script type="text/javascript" src="js/jquery-migrate-1.2.1.js"></script>
+<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+<script type="text/javascript" src="js/jquery-form.js"></script>
+<script type="text/javascript" src="js/jquery.easyui.min.js"></script>
+<script>
+    /* function init() {
+        $('#tb_account1').flexigrid({
+            'url': false
+                , 'width': 500
+   , 'dataType': 'json'
+   , 'colModel': [
+     { 'display': 'Name', 'name': 'Name', 'width': 100, 'sortable': false, 'align': 'left', 'dataAlign': 'left' }
+                    , { 'display': 'Age', 'name': 'Age', 'width': 100, 'sortable': false, 'align': 'left', 'dataAlign': 'left' }
+                     , { 'display': 'Option', 'name': 'Option', 'width': 300, 'sortable': false, 'align': 'left', 'dataAlign': 'left' }
+   ]
+   , 'resizable': false
+                , 'striped': true
+   , 'singleSelect': true
+   , 'showToggleBtn': false
+                , 'minheight': 30
+                , 'height': 150
+   , 'preProcess': function (data) {
+       return data;
+   }
+                , 'doDbClick': function () {
+                }
+});
+var tbData1 = { 'total': 1, 'rows': [] };
+for (var i = 0; i < 4; i++) {
+   tbData1['rows'].push({ 'cell': ["name", "10", "<button>Add</button>&nbsp;<button>Modify</button>"] });
+}
+$('#tb_account1').flexAddData(tbData1);
+    } */
+ $(document).ready(function(){  
+    
+    $(".tijiao").click(function(){
+	 $("input").ajaxSubmit({
+	      type:"post",
+	      url:"/yangshantest/nihao.action",
+	      data:{
+		  'FirstName':$("#FirstName").val(),
+		  'LastName':$("#LastName").val()
+	      },
+	      dataType:"json",
+	      success:function(e){
+		  alert("姓:"+e.id);
+		  alert("名:"+e.data);
+	  }
+     }); 
+    })
+     
+      
+      /*$("form").submit();*/
+	});   
+    
+ $(document).ready(function(){  
+    $("#req").click(function(){
+	alert("jquery!");
+    })
+  })
+  $(function(){
+      $.post('/yangshantest/hello.action',{},function(data){
+	  	$('#id').val(data['id']);
+	  	$('#value').val(data['data']);	  
+      });
+  })
+
+
+</script>
+</head>
+<!-- <body onload="init();"> -->
+<body>
+	<!-- <form name="input" action="/yangshantest/nihao.action" method="get"> -->
+	<form name="input" >
+		名: <input type="text" id="FirstName" value="Mickey"size="20"> <br />
+		姓: <input type="text" id="LastName" value="Mouse" size="20"> <br />
+		 <input	type="button" class="tijiao" value="Submit">
+	</form>
+	
+	<form id="systemConfigForm">
+			<table width="982px">
+				<tr width=100% height="100%">
+					<td>
+						<fieldset class="formarea2">
+							<br />
+							<legend>测试数据获取</legend>
+							<table style="font-size: 16px;">
+								<tr>
+									<td><lable class="lablesmall">成员ID</lable></td>
+									<td width="5%"></td>
+									<td><input type="text" id="id" name="awsIp"
+										style="width: 180px; vertical-align: middle" /></td>
+									<td width="8%"></td>
+									<td><lable class="lablesmall">成员值</lable></td>
+									<td width="5%"></td>
+									<td><input type="text" id="value" name="awsPort"
+										style="width: 180px; vertical-align: middle" /></td>
+								</tr>
+							</table>
+						</fieldset>
+						<center>
+							<input id="btn_query" type="button" onclick="editParams();"
+								value=" 保 存 " style="float: none;" /> <input id="btn_query"
+								type="button" onclick="clearParams();" value=" 重 置"
+								style="float: none;" /> <input
+								id="btn_query_push_update_printserver" type="button"
+								onclick="pushUpdatePrintserver();" value=" 请求数据"
+								style="float: none;" />
+						</center>
+					</td>
+				</tr>
+			</table>
+		</form>
+</body>
+</html>

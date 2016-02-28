@@ -1,0 +1,24 @@
+package com.shan.study;
+
+import java.util.Map;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+
+@Controller
+@RequestMapping("/user")
+public class HelloController {
+	
+	@RequestMapping ("users")
+	public String hello(Model model){
+		System.out.println(id);
+		System.out.println("hellouserid");
+	    return "hello";
+	}/**/
+	
+}
