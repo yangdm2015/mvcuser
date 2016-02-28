@@ -126,7 +126,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log." suffix=".txt"/>
 
-      <Context docBase="D:\javaweb\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="D:\javaweb\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\spring_mvc_user" path="/spring_mvc_user" reloadable="true" source="org.eclipse.jst.jee.server:spring_mvc_user"/><Context docBase="D:\javaweb\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\mvcuser" path="/mvcuser" reloadable="true" source="org.eclipse.jst.jee.server:mvcuser"/><Context docBase="D:\javaweb\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\test" path="/test" reloadable="true" source="org.eclipse.jst.jee.server:test"/><Context docBase="D:\javaweb\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\spring_mvc_01" path="/spring_mvc_01" reloadable="true" source="org.eclipse.jst.jee.server:spring_mvc_01"/></Host>
+      <Context docBase="D:\javaweb\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="D:\javaweb\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\mvcuser" path="/mvcuser" reloadable="true" source="org.eclipse.jst.jee.server:mvcuser"/><Context docBase="D:\javaweb\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\webuser" path="/webuser" reloadable="true" source="org.eclipse.jst.jee.server:webuser"/></Host>
     </Engine>
   </Service>
 </Server>

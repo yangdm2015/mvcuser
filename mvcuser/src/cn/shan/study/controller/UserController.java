@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import cn.shan.study.meta.User;
 
 @Controller
-
+@RequestMapping("/user")
 public class UserController {
 	private final static Map<String,User>users=new HashMap<String,User>();
 
