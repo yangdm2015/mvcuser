@@ -22,7 +22,6 @@ public class UserController {
 	}
 	@RequestMapping(value={"/users"})
 	public String list(Model model){
-		System.out.println("list");
 		model.addAttribute("users",users);
 		return "user/list";		
 	}

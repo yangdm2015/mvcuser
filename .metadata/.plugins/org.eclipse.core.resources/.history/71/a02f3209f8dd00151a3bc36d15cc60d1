@@ -3,15 +3,19 @@ package cn.shan.study.controller;
 import java.util.HashMap;
 import java.util.Map;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import cn.shan.study.meta.User;
 
+
 @Controller
 @RequestMapping("/user")
-public class UserController {
+public class HelloController {
 	private final static Map<String,User>users=new HashMap<String,User>();
 
 	public UserController() {
@@ -20,21 +24,30 @@ public class UserController {
 		users.put("gfc",new User("gfc","¹ù¸»³Ç","123","123123"));
 		users.put("lm",new User("lm","ÀèÃ÷","123","123123"));
 	}
+	
+	
+	
 	@RequestMapping(value={"/users"})
 	public String list(Model model){
 		System.out.println("list");
-		model.addAttribute("users",users);
 		return "user/list";		
 	}
-	@RequestMapping("/")
-	public String hello(Model model){
-		System.out.println("hello");
-		return "user/list";		
-	}
-	@RequestMapping("/user")
-	public String hello1(Model model){
+
+	@RequestMapping (value={"/h","/hh"})
+	public String hello1( int isd){
+		System.out.println(isd);
 		System.out.println("hello1");
-		return "user/list";		
+	    return "hello";
+	}/**/
+
+	@RequestMapping (value={"/see"})
+	public String see(Model mod, String id,String name){
+		System.out.println(id);
+		System.out.println("Hello");
+		mod.addAttribute("hello", "this is see replying:"+id);
+		mod.addAttribute("says", "\n replying:"+name);
+		
+	return "say";
 	}
 
 }
