@@ -8,7 +8,7 @@
 		
 	<mvc:annotation-driven />
 	
-	<context:component-scan base-package="cn.shan.stuty.controller"></context:component-scan>
+	<context:component-scan base-package="cn.shan.study.controller"></context:component-scan>
 										  
 	
 	
