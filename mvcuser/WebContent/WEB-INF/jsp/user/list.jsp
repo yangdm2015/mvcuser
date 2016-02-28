@@ -9,7 +9,10 @@
 </head>
 <body>
  <c:forEach items="${users}" var = "user">
- 	${ user.username}------${user.nickname }-------${user.password }-------${user.email}
+ 	${ user.value.username}-------
+ 	${user.value.nickname }-------
+ 	${user.value.password }-------
+ 	${user.value.email}<br/>
  </c:forEach>
 </body>
 </html>
